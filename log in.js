@@ -9,11 +9,11 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const password = passwordField.value;
     console.log(password);
     // passsword checking but its's wrong away 
-    if (email === 'meghla@gmail.com' && password === '111111'){
+    if (email === 'meghla@gmail.com' && password === '111111') {
         console.log('valid user')
     }
-    else{
-        console.log('invalid user')
+    else {
+        alert('invalid user')
     }
 
 })
