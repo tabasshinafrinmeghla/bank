@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="new.js">
+    
 </head>
 
 <body>
@@ -21,29 +21,29 @@
             <div class=" grid grid-cols-3 gap-4 w3/4 mx-auto bg-purple-500">
                 <div class="bg-fuchsia-400 mt-4 mb-4 p-8 rounded-xl">
                     <h1 class="text-center text-2xl">Deposit</h1>
-                    <h2 class="text-center text-5xl">$ <span id="deposit-total"></span></h2>
+                    <h2 class="text-center text-5xl">$ <span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-fuchsia-300 mt-4 mb-4 p-8 rounded-xl">
                     <h1 class="text-center text-2xl">withdraw</h1>
-                    <h2 class="text-center text-5xl">$ <span id="withdraw-total"></span></h2>
+                    <h2 class="text-center text-5xl">$<span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="bg-fuchsia-200 mt-4 mb-4 p-8 rounded-xl">
                     <h1 class="text-center text-2xl">Balance</h1>
-                    <h2 class="text-center text-5xl">$ <span id="balance-total"></span></h2>
+                    <h2 class="text-center text-5xl">$ <span id="balance-total">00</span></h2>
                 </div>
             </div>
         </section>
         <!-- deppsit and withdraw section -->
-        <section class="mt-6 w-3/4 mx-auto">
-            <div class="grid grid-cols-2 gap-4 ">
-                <div class="bg-purple-400 p-8 rounded-xl">
+        <section class="mt-6 w-3/4 mx-auto ">
+            <div class="grid grid-cols-2 gap-4  ">
+                <div class="bg-purple-400 p-8 rounded-xl mb-2">
                     <h3 class="text-3xl">set Deposit Amount</h3>
-                    <input class="mt-4 block" type="text" placeholder=" $ Enter amount">
+                    <input id="deposit-field" class="mt-4 block" type="text" placeholder=" $ Enter amount">
                     <button id="btn-deposit" class="bg-purple-500 mt-4 hover:bg-purple-200 rounded-lg w-3/12">Deposit</button>
                 </div>
-                <div class="bg-purple-400 p-8 rounded-xl">
+                <div class="bg-purple-400 p-8 rounded-xl mb-2">
                     <h3 class="text-3xl">set Withdraw Amount</h3>
-                    <input class="mt-4 block" type="text" placeholder=" $ Enter amount">
+                    <input id="btn withdraw" class="mt-4 block" type="text" placeholder=" $ Enter amount">
                     <button id="btn-withdraw" class="bg-purple-500 mt-4 hover:bg-purple-200 rounded-lg w-3/12">withdraw</button>
                 </div>
 
@@ -51,7 +51,8 @@
             </div>
         </section>
     </main>
-
+    
+<script src="new.js"></script>
 </body>
 
 </html>
